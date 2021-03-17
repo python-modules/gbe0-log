@@ -34,3 +34,9 @@ log.verbose('A message to log at verbose level') # Verbosity level 3
 log.debug('A message to log at verbose level') # Verbosity level 4
 log.trace('A message to log at trace level') # Verbosity level 5
 ```
+
+## Example Output
+
+Output is to stderr and looks like this:
+
+![Log output](example.png)
