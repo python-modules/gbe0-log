@@ -50,3 +50,11 @@ log.fatal('A fatal error occured', code = 99)
 Output is to stderr and looks like this:
 
 ![Log output](example.png)
+
+## Optimization
+
+If Python is running in optimized mode calls to the following log levels are a no-op:
+
+- trace
+- debug
+- verbose
