@@ -13,3 +13,6 @@ logging.getLogger(__name__).addHandler(NullHandler())
 
 # Import version info
 from .__version__ import __version__
+
+# Import main module
+from .logger import Logger
