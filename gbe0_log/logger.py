@@ -24,13 +24,7 @@ class Logger(object):
     logging.TRACE = logging.DEBUG - 5
     logging.VERBOSE = logging.INFO - 5
 
-    ## Set default log level
-    def_verbosity = logging.INFO
-
-    ## Set default error code for fatal errors
-    def_code = EINTR
-
-    def __init__(self, verbosity: int = def_verbosity) -> object:
+    def __init__(self, verbosity: int = logging.INFO) -> object:
         """Initialize logging
 
         Args:
@@ -206,7 +200,7 @@ class Logger(object):
         if __debug__: logging.log(logging.VERBOSE, message, stacklevel = stacklevel, *args, **kwargs)
 
     @staticmethod
-    def __log_fatal(message, stacklevel: int = 3, code: int = def_code, *args, **kwargs) -> None:
+    def __log_fatal(message, stacklevel: int = 3, code: int = EINTR, *args, **kwargs) -> None:
         """Log a message at the critical level and exit
 
         Args:
