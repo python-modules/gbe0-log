@@ -8,6 +8,8 @@ My logging module changelog.
 - Fix typo in readme
 - Change variable for default log level and exit code
 - Add optimization info to readme
+- Change param order for fatal log level
+- Add basic benchmarks
 
 ## [0.0.1] - 2020-03-17
 

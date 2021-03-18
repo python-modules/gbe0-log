@@ -200,7 +200,7 @@ class Logger(object):
         if __debug__: logging.log(logging.VERBOSE, message, stacklevel = stacklevel, *args, **kwargs)
 
     @staticmethod
-    def __log_fatal(message, stacklevel: int = 3, code: int = EINTR, *args, **kwargs) -> None:
+    def __log_fatal(message, code: int = EINTR, stacklevel: int = 3, *args, **kwargs) -> None:
         """Log a message at the critical level and exit
 
         Args:
