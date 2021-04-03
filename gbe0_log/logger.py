@@ -24,7 +24,7 @@ class Logger(object):
     logging.TRACE = logging.DEBUG - 5
     logging.VERBOSE = logging.INFO - 5
 
-    def __init__(self, verbosity: int = logging.INFO) -> object:
+    def __init__(self, verbosity: int = logging.INFO):
         """Initialize logging
 
         Args:
